@@ -67,18 +67,34 @@ h4 {
     font-size: 18px;
     font-weight: bold;
 }
-#recherche {
+.fa-magnifying-glass{
+    color: white!important;
+    z-index: 2;
+    position: absolute;
+    font-size: 18px;
+}
+.recherchePhone {
     z-index: 1;
-    position: relative;
+    position: absolute;
+    border-style: solid;
+    border-width: 13px;
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+    margin-left: -6000px;
+    border-radius: 15px;
+}
+#recherche {
     border-style: solid;
     border-color: var(--main-bg-color);
     border-width: 1px;
     font-size: 18px;
-    padding: 13px;
-    padding-left: 45px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     font-weight: bold;
+    height: 44px;
+    text-indent: 50px;
+    width: 220px;
 }
 #recherche:focus {
     outline: none;
@@ -400,12 +416,29 @@ footer {
     .petitTitre {
         margin-top: 17px;
     }
+    
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     .hebergements {
         width: 100%;
+    }
+    .recherche {
+        display: none;
+    }
+    .recherchePhone {
+        margin-left: -39px;
+        width: 50px;
+        height: 48px;
+        filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.3));
+    }
+    #recherche {
+        width: 96%;
+    }
+    .fa-magnifying-glass {
+        margin-top:17px;
+        margin-left: -23px;
     }
     .filtre{
         width: 34%;
