@@ -337,10 +337,12 @@ h4 {
     font-size: 16px;
     padding-top: 11px;
 }
-.navHebergements {
+.navigation a:hover{
     text-decoration: underline;
     text-underline-offset: -31px;
     color: var(--main-color);
+}
+.navHebergements {
     margin-right: 68px;
 }
 nav img {
@@ -475,5 +477,36 @@ footer {
     }
     .hebergements-and-populaires{
         flex-direction: column-reverse;
+    }
+    .navigation {
+        justify-content: space-around;
+        margin-bottom: 18px;
+    }
+    .navHebergements{
+        margin-right: 0px;
+    }
+    .navigation a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 17px;
+        border-bottom: solid;
+        border-color: var(--main-bg-color);
+    }
+    .navigation a:hover {
+        text-decoration: none;
+        border-color: var(--main-color);
+    }   
+    nav img {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    nav span {
+        display: flex;
+        justify-content: center;
     }
 }
